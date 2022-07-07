@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,900&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap'); 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,900&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap');
 *{
     margin:0;
     padding:0;
@@ -9,6 +8,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 /* navbar styling */
 .max-width{
     max-width :1300px;
@@ -24,7 +24,6 @@ html{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    /* padding: 30px 0; */
     background-color:crimson; 
 }
 .navbar .max-width{
@@ -60,6 +59,7 @@ html{
 .navbar.sticky .menu li a:hover{
     color:#fff;
 }
+
 /* menu btn styling */
 .menu-btn{
     color:#fff;
@@ -90,10 +90,11 @@ html{
     opacity: 1;
     pointer-events: auto;
 }
+
 /* home section styling*/
 .home{
     display:flex;
-    background:url("images/banner.jpg") no-repeat center;
+    background:url("images/banner.png") no-repeat center;
     height: 100vh;
     color:#fff;
     min-height:500px;
@@ -137,20 +138,21 @@ html{
     color: crimson;
     background: none;
 }
+
 /*similar styling code*/
 section{
-    padding:100px 0;
+    padding: 100px 0;
 }
-.about, .services, .skills, .projects, .contact, footer{
+.about, .education, .services, .skills, .projects, .contact, footer{
     font-family: 'poppins','sans-serif';
 }
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content {
+.contact .contact-content{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch !important;
     justify-content: space-between;
 }
 section .title{
@@ -181,6 +183,7 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
+
 /*about section styling starts here*/
 .about .title::after{
     content: "Who I am";
@@ -224,6 +227,136 @@ section .title::after{
     background: none;
 }
 
+/* education section*/
+/* .education {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background: #eee;
+}
+
+.education {
+    font-family:'poppins', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container-wrapper--timeline .swiper-slide {
+    display: flex;
+    background: #fff;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.swiper-container-wrapper--timeline .swiper-slide .container {
+    padding: 0;
+    width: 100%;
+}
+.swiper-container-wrapper--timeline .swiper-slide .title {
+    font-size: 18px;
+    opacity: 0;
+    transition: 0.5s ease 0.5s;
+}
+.swiper-container-wrapper--timeline .swiper-slide-active .title {
+    opacity: 1;
+}
+.swiper-container-wrapper--timeline .swiper-pagination-progressbar {
+    position: relative;
+    margin-bottom: 70px;
+    background-color: transparent;
+    height: 4px;
+    border-bottom: 1px solid #888;
+    width: 75%;
+}
+.swiper-container-wrapper--timeline .swiper-pagination-progressbar-fill {
+    background-color: #000;
+    height: 3px;
+    top: 2px;
+}
+.swiper-container-wrapper--timeline .swiper-pagination-progressbar:before {
+    position: absolute;
+    top: 2px;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    content: "";
+}
+.swiper-container-wrapper--timeline .swiper-pagination-progressbar:after {
+    position: absolute;
+    top: 3px;
+    right: -100%;
+    width: 100%;
+    height: 1px;
+    background-color: #888;
+    content: "";
+}
+.swiper-container-wrapper--timeline .swiper-pagination-custom {
+    position: relative;
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    line-height: 1.66;
+    bottom: 0;
+    z-index: 11;
+    width: 75%;
+    display: flex;
+}
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch .switch-title {
+    position: absolute;
+    font-weight: 400;
+    right: 0;
+    transform: translateX(50%);
+    transition: 0.2s all ease-in-out;
+    transition-delay: 0s;
+    cursor: pointer;
+    z-index: 1;
+}
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch .switch-title:after {
+    position: absolute;
+    top: calc(100% + 19px);
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: #000;
+    border-radius: 2rem;
+    content: "";
+    transition: 0.2s all ease-in-out;
+    transition-delay: 0s;
+    z-index: 1;
+}
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active .switch-title {
+    font-weight: 400;
+    transition-delay: 0.4s;
+}
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active .switch-title:after {
+    background: #000;
+    width: 25px;
+    height: 25px;
+    transition-delay: 0.4s;
+}
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active ~ .swiper-pagination-switch .switch-title {
+    color: #888;
+    font-weight: 16px;
+}
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active ~ .swiper-pagination-switch .switch-title:after {
+    background: #888;
+} */
+/* education section ends*/
+
+
+
 /*services section styling starts here*/
 .services, .projects{
     color: #fff;
@@ -232,7 +365,6 @@ section .title::after{
 .services .title::before,
 .projects .title::before{
     background: #fff;
-
 }
 .services .title::after,
 .projects .title::after {
@@ -253,11 +385,9 @@ section .title::after{
 }
 .services .serv-content .card:hover{
     background-color: crimson;
-
 }
 .services .serv-content .card .box:hover{
     transform: scale(1.07);
-
 }
 .services .serv-content .card i{
     font-size: 30px;
@@ -266,7 +396,6 @@ section .title::after{
 }
 .services .serv-content .card:hover i{
     color: #fff;
-
 }
 .services .serv-content .card .text{
     font-size: 20px;
@@ -275,7 +404,6 @@ section .title::after{
 }
 
 /* skills section styling*/
-
 .skills .title::after{
     content:"What I know";
 }
@@ -305,26 +433,27 @@ section .title::after{
     color:crimson;
     background:none;
 }
-.skills .skills-content .right .bars{
+
+.skills .skills-content  .bars{
     margin-bottom: 15px;
 }
-.skills .skills-content .right .info{
+.skills .skills-content  .info{
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
-.skills .skills-content .right span{
+.skills .skills-content  span{
     font-weight: 500;
     font-size: 18px;
 }
-.skills .skills-content .right .line{
+.skills .skills-content  .line{
     height: 5px;
     width: 100%;
     background: lightgray;
     position: relative;
 }
-.skills .skills-content .right .line::before{
+.skills .skills-content .line::before{
     content: "";
     position: absolute;
     height: 100%;
@@ -332,31 +461,50 @@ section .title::after{
     top: 0;
     background: crimson;
 }
-.skills .skills-content .right .html::before{
+.skills .skills-content .html::before{
         width: 90%;
 }
-.skills .skills-content .right .css::before{
+.skills .skills-content .css::before{
         width: 80%;
 }
-.skills .skills-content .right .js::before{
+.skills .skills-content .js::before{
         width: 75%;
 }
-.skills .skills-content .right .php::before{
+.skills .skills-content .php::before{
         width: 55%;
 }
-.skills .skills-content .right .mysql::before{
+.skills .skills-content .mysql::before{
         width: 70%;
 }
-
+.skills .skills-content .react::before{
+    width: 90%;
+}
+.skills .skills-content .adobe::before{
+    width: 90%;
+}
+.skills .skills-content .sass::before{
+    width: 75%;
+}
+.skills .skills-content .JQuerry::before{
+    width: 55%;
+}
+.skills .skills-content .Node::before{
+    width: 50%;
+}
 /* projects styling */
 .projects .title::after{
     content: "What I have built ";
+}
+.projects .carousel{
+    display: flex;
+    align-items: stretch;
 }
 .projects .carousel .card{
     background: #222;
     border-radius: 10px;
     padding: 25px 35px;
     text-align: center;
+    align-items: stretch;
 }
 .projects .carousel .card:hover{
     background: crimson;
@@ -364,7 +512,7 @@ section .title::after{
 .projects .carousel .card .box{
     display: flex;
     flex-direction: column ;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     transition: all 0.3s ease;
 }
@@ -404,23 +552,23 @@ section .title::after{
     content: "Get in touch";
 }
 .contact .contact-content .column{
-    width: calc(50% - 30px);
+    width: 100%;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
 }
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.contact .contact-content .left p{
-    text-align: justify;
-}
-.contact .contact-content .left .icons{
-    margin: 10px 0;
-}
 .contact .contact-content .row{
     display: flex;
+    justify-content: space-around;
+    width: calc(50% - 30px);
     height: 65px;
     align-items: center;
+    margin: 10px;
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
@@ -435,60 +583,13 @@ section .title::after{
 .contact .contact-content .info .sub-title{
     color: #333;
 }
-.contact .right form .fields {
-    display: flex;
+.contact .contact-content .info .sub-title a{
+    color: #333;
+    text-decoration: none;
 }
-.contact .right form .field,
-.contact .right form .fields .field{
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
+.contact .contact-content .info .sub-title a:hover{
+    text-decoration: underline;
 }
-.contact .right form .textarea{
-    height: 80px;
-}
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .email{
-    margin-left: 10px;
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea {
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px ;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-}
-.contact .right form .textarea textarea {
-    padding-top: 10px;
-    resize:none;
-}
-.contact .right form .button{
-    height: 47px;
-    width: 170px;
-}
-.contact .right form .button button{
-    height: 100%;
-    width: 100%;
-    border: 2px solid crimson;
-    background: crimson;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.contact .right form .button button:hover{
-    color: crimson;
-    background: none;
-}
-
 /* footer section styling */
 footer{
     background: #111;
@@ -496,7 +597,6 @@ footer{
     color: #fff;
     text-align: center;
 }
-
 footer span a{
     color: crimson;
     text-decoration: none;
@@ -582,9 +682,8 @@ footer span a:hover{
     }
     .skills .skills-content .column,
     .contact .contact-content .column{
-    width: 100%;
-    margin-bottom: 25px;
-    
+        width: 100%;
+        margin-bottom: 25px;
     }
 }
 @media (max-width: 690px){
@@ -598,7 +697,7 @@ footer span a:hover{
         font-size: 32px;
         }
     .home .home-content a{
-            font-size: 20px;
+        font-size: 20px;
         }
     .services .serv-content .card,
     .skills .skills-content .column{
@@ -611,11 +710,5 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
-    /* .services .serv-content .card{
-        width: calc(50% -10px);
-        margin-bottom: 20px ;
-    } */
-
-    } 
-
+}
 }

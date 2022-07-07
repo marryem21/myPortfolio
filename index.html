@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mariem Hamdi Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ffb92a10df.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -34,7 +35,6 @@
             </div>
         </div>
     </nav>
-
     <!-- home section start -->
     <section class="home" id="home">
         <div class="max-width">
@@ -42,28 +42,26 @@
                 <div class="text-1">Hello, my name is </div>
                 <div class="text-2">Mariem Hamdi </div>
                 <div class="text-3">And I am a <span class="typing"></span></div>
-                <a href="#" class="href">Hire me</a>
+                <a href="#contact" class="href">Hire me</a>
             </div>
         </div>
     </section>
-
 <!-- About section start here -->
     <section class="about" id="about">
         <div class="max-width">
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="left column">
-                    <img src="images/profile-1.jpg" alt="">
+                    <img src="images/profile.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I am Tunisian and I am a <span>software engineer</span></div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorem placeat eum itaque obcaecati omnis quidem qui fuga sapiente reiciendis sunt adipisci aliquam ducimus nihil, nulla maiores, modi temporibus, recusandae corrupti quam! Cumque deserunt aperiam dicta, dolore numquam beatae facere dolorum magnam corporis praesentium nulla, obcaecati dolor incidunt sed fugit distinctio laboriosam expedita veritatis aut officiis odit doloribus nobis error magni. Optio tempora magnam nesciunt, nulla sapiente velit, dignissimos voluptatibus voluptates vel blanditiis quis asperiores.</p>
-                    <a href="#">Download CV</a>
+                    <div class="text">I am Tunisian and I am a <span>Software engineer</span></div>
+                    <p>I am a passionate, determined, and well-rounded engineering student with an admiration for front-end development, especially user-centered design and the development of websites. I believe that my cross-cultural background as a cultural ambassador makes me a proactive team player with knowledge in the data structure, front-end, and back-end. I have developed several websites throughout my five years of higher education using React.js, PHP, Java Swing, JEE, node.js, python, JavaScript, and most data management languages like MySQL Postgresql, and PL/SQL. I am confident that I bring more to the table than just coding and hard skills, but also commitment, an Agile mindset, and loads of emotional intelligence.</p>
+                    <a href="images/Mariem_Hamdi _ Software engineer.pdf" download>Download CV</a>
                 </div>
             </div>
         </div>
     </section>
-
 <!-- Services section start here -->
     <section class="services" id="services">
         <div class="max-width">
@@ -73,36 +71,67 @@
                     <div class="box">
                         <i class="fas fa-paint-brush"></i>
                         <div class="text">UI/UX Design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae fugit ab, aliquam iure non temporibus.</p>
+                        <p>User-centered design for interfaces with respect of the digital layout rules and standards. Master of the Adobe XD tool</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fa-solid fa-code"></i>
                         <div class="text">Back-end</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae fugit ab, aliquam iure non temporibus.</p>
+                        <p>Entry level skills in Back-end development: Node.js. Aspiring to learn more and dive in the back-end technologies.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fa-solid fa-laptop-code"></i>
                         <div class="text">Front-end</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae fugit ab, aliquam iure non temporibus.</p>
+                        <p>Ability to bring the UI/UX designs into life with responsive development using React.js, HTML5, CSS and ES6</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 <!-- skills section here  -->
 <section class="skills" id="skills">
 <div class="max-width">
     <h2 class="title">My skills</h2>
     <div class="skills-content">
         <div class="column left">
-            <div class="text">My creative skills</div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur nesciunt dolore delectus ipsam sit ea animi deserunt consectetur fugiat consequatur laboriosam inventore, sapiente nihil possimus.</p>
-            <a href="#">Read more</a>
+            <div class="bars">
+                <div class="info">
+                    <span>React.js</span>
+                    <span>80%</span>
+                </div>
+                <div class="line react"></div>
+            </div>
+            <div class="bars">
+                <div class="info">
+                    <span>Adobe XD</span>
+                    <span>90%</span>
+                </div>
+                <div class="line adobe"></div>
+            </div>
+            <div class="bars">
+                <div class="info">
+                    <span>SASS</span>
+                    <span>75%</span>
+                </div>
+                <div class="line sass"></div>
+            </div>
+            <div class="bars">
+                <div class="info">
+                    <span>JQuerry</span>
+                    <span>60%</span>
+                </div>
+                <div class="line JQuerry"></div>
+            </div>
+            <div class="bars">
+                <div class="info">
+                    <span>Node.js</span>
+                    <span>50%</span>
+                </div>
+                <div class="line Node"></div>
+            </div>
         </div>
         <div class="column right">
             <div class="bars">
@@ -152,32 +181,26 @@
         <div class="carousel owl-carousel">
             <div class="card ">
                 <div class="box">
-                    <div class="text">AyClass</div>
-                    <p>Tutoring Platform(React.js)</p>
+                    <div class="text">AyClass: React.js</div>
+                    <p>A personal project consists of a tutoring platform dedicated to university students to search for a tutor or make money</p>
                 </div>           
             </div>
             <div class="card ">
                 <div class="box">
-                    <div class="text">Project name</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iusto laudantium similique eligendi nostrum perferendis sed natus eveniet? Iusto, consequatur!</p>
+                    <div class="text">Food ordering: PHP</div>
+                    <p>Responsive food ordering website using PHP with an admin and a user interface. Enables users to make orders among categories.</p>
                 </div>           
             </div>
             <div class="card ">
                 <div class="box">
-                    <div class="text">Food ordering website(PHP)</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iusto laudantium similique eligendi nostrum perferendis sed natus eveniet? Iusto, consequatur!</p>
+                    <div class="text">Task dispatcher</div>
+                    <p>Internship: website that tracks tasks improvement and asignements to employees in reel time using React.js. </p>
                 </div>           
             </div>
             <div class="card ">
                 <div class="box">
-                    <div class="text">Task dispatcher(React.js)</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iusto laudantium similique eligendi nostrum perferendis sed natus eveniet? Iusto, consequatur!</p>
-                </div>           
-            </div>
-            <div class="card ">
-                <div class="box">
-                    <div class="text">Doctor appointments keeper(Java Swing)</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iusto laudantium similique eligendi nostrum perferendis sed natus eveniet? Iusto, consequatur!</p>
+                    <div class="text">Appointments keeper</div>
+                    <p>As part of a course project: I created a website that keeps track of doctor appointments or cancelations with auhentification using Java Swing.</p>
                 </div>           
             </div>
         </div>
@@ -188,10 +211,7 @@
     <div class="max-width">
         <h2 class="title">Contact me</h2>
         <div class="contact-content">
-            <div class="column left">
-                <div class="text">Get in Touch</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus minima officia aliquid saepe necessitatibus obcaecati eum est similique deserunt iste, quae accusamus perferendis error enim, sed, iure distinctio temporibus.</p>
-                <div class="icons">
+            <div class="column ">
                     <div class="row">
                         <i class="fas fa-user"></i>
                         <div class="info">
@@ -213,36 +233,27 @@
                             <div class="sub-title">hammdimaryem@gmail.com</div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="column right">
-                <div class="text">Message me</div>
-                <form action="#">
-                    <div class="fields">
-                        <div class="field name">
-                            <input type="text" placeholder="Name"required>
-                        </div>
-                        <div class="field email">
-                            <input type="text" placeholder="Email" required>
+                    <div class="row">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <div class="info">
+                            <div class="head">LinkedIn</div>
+                            <div class="sub-title"><a href="https://www.linkedin.com/in/maryem-hammdi-profile">Click here</a></div>
                         </div>
                     </div>
-                    <div class="field ">
-                        <input type="text" placeholder="Subject" required>
+                    <div class="row">
+                        <i class="fa-brands fa-github"></i>
+                        <div class="info">
+                            <div class="head">Github</div>
+                            <div class="sub-title"><a href="https://github.com/marryem21">Click here</a></div>
+                        </div>
                     </div>
-                    <div class="field textarea ">
-                        <textarea cols="30" rows="10" placeholder="Description" required></textarea>
-                    </div>
-                    <div class="button">
-                        <button type="submit">Send message</button>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
 </section>
 <!-- footer section start -->
 <footer>
-    <span>Created By <a href="">Mariem Hamdi</a> <span class="fa fa-copyright footer"></span>2020 All rights reserved. </span>
+    <span>Created By <a href="">Mariem Hamdi</a> <span class="fa fa-copyright footer"></span>2022 All rights reserved. </span>
 </footer>
 <script src="script.js"></script>
 </body>
